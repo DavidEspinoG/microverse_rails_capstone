@@ -1,6 +1,12 @@
 <div class="home-container">
+  <% if current_user %>
+    <h2>Hello <%= current_user.name %></h2>
+  <% end %>
   <h1 class="main-title" >Budget App<h1>
   <div>
     <%= link_to 'Sign up' ,new_user_registration_path %>
+    <% if current_user %>
+      <%= button_to 'Log out', destroy_user_session_path, method: :delete %>
+    <% end %>
   </div>
 </div>
