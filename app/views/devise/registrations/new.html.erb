@@ -1,17 +1,7 @@
+<h2>Sign up</h2>
 
-
-
-<%= form_for(resource, as: resource_name, url: user_registration_path(resource_name)) do |f| %>
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
-  <div class="header">
-    <i class="fa-solid fa-arrow-left"></i>
-    <h2 class="header-title">Register</h2>
-    <%= f.submit "Sign up", class: 'nav-link' %>
-  </div>
-  <div class="field">
-    <%= f.label :name %><br />
-    <%= f.text_field :name, autofocus: true, autocomplete: "name" %>
-  </div>
 
   <div class="field">
     <%= f.label :email %><br />
@@ -32,7 +22,7 @@
   </div>
 
   <div class="actions">
-    
+    <%= f.submit "Sign up" %>
   </div>
 <% end %>
 
