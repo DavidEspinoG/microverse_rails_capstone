@@ -2,6 +2,7 @@
   --blue: #3778c2;
   --green: #5bf523;
   --gray: #434b54;
+  --title-font: 'Courgette', cursive;;
 } 
 
 html {
@@ -20,3 +21,17 @@ body {
   padding: 0;
 }
 
+.home-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--blue);
+  color: white;
+}
+
+.main-title {
+  font-family: var(--title-font);
+  font-size: 40px;
+}
