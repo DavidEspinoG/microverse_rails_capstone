@@ -82,6 +82,7 @@ body {
 .gray-background {
   background-color: #e5e5e5;
   height: 100vh;
+  position: relative;
 }
 
 .form-container {
@@ -111,4 +112,29 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.green-button-container {
+  position: fixed;
+  bottom: 0;
+  background-color: var(--green);
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.green-button {
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  padding: 10px 40px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.green-button:hover {
+  color: var(--gray);
+  border: 1px solid var(--gray);
 }

@@ -1,1 +1,15 @@
-<h1>Categories view</h1>
+<div class="header">
+  <i class="fa-solid fa-arrow-left"></i>  
+  <h2 class="header-title">Categories</h1>
+  <i class="fa-solid fa-magnifying-glass"></i>
+</div>
+<div class="gray-background">
+  <div class="category-container">
+    <span>image</span>
+    <p>name</p>
+    <p>total amount<p>
+  </div>
+  <div class="green-button-container">
+    <%= link_to 'Add new category', new_category_path, class: 'green-button' %>
+  </div>
+</div>
