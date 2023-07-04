@@ -150,3 +150,9 @@ body {
   color: var(--gray);
   border: 1px solid var(--gray);
 }
+
+.alert {
+  margin-top: 10px ;
+  padding-left: 10px;
+  color: var(--gray);
+}
