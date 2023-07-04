@@ -4,7 +4,7 @@
   --gray: #86898e;
   --title-font: 'Courgette', cursive;
   --main-font: 'Montserrat', sans-serif;
-} 
+}
 
 html {
   box-sizing: border-box;
@@ -12,7 +12,7 @@ html {
 }
 
 *,
-*::before, 
+*::before,
 **::after {
   box-sizing: inherit;
 }
