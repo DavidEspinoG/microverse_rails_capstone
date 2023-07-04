@@ -156,3 +156,39 @@ body {
   padding-left: 10px;
   color: var(--gray);
 }
+
+.category-container {
+  background-color: white;
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.categories-container {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.category-container-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.category-container-right {
+  flex: 3;
+}
+
+.category-container-data {
+  display: flex;
+  justify-content: space-between;
+}
+
+.category-container-text {
+  color: var(--gray);
+}
