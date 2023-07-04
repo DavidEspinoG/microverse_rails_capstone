@@ -77,6 +77,18 @@ body {
   color: white;
   font-size: 17px;
   font-weight: 200;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  color: var(--green);
+}
+
+.radio-buttons-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 10px;
 }
 
 .gray-background {

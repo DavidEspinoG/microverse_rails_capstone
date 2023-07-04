@@ -1,0 +1,37 @@
+<%= form_with do |form|%>
+  <div class="header">
+    <%= link_to '/categories', class: 'nav-link' do %>
+      <i class="fa-solid fa-arrow-left"></i> 
+    <% end %>
+    <h2 class="header-title">New category</h2>
+    <%= form.submit class: 'nav-link'%>
+  </div>
+  <div class="gray-background">
+    <div class="form-container">
+        <%= form.text_field :name, autofocus: true, autocomplete: "name", placeholder: 'Category name', class: 'input' %>
+        <hr class="line">
+        <div class="input">
+          <span>Select an icon: </span>
+        </div>
+        <div class="radio-buttons-container">
+          <%= form.radio_button :icon, '1'%>
+          <%= form.label :icon_1  do %>
+          <%= image_tag '1.png' %>
+          <% end %>
+          <%= form.radio_button :icon, '2'%>
+          <%= form.label :icon_2  do %>
+          <%= image_tag '2.png' %>
+          <% end %>
+          <%= form.radio_button :icon, '3'%>
+          <%= form.label :icon_3  do %>
+          <%= image_tag '3.png' %>
+          <% end %>
+          <%= form.radio_button :icon, '4'%>
+          <%= form.label :icon_4  do %>
+          <%= image_tag '4.png' %>
+          <% end %>
+        </div>
+        
+    </div>
+  </div>
+<% end %>
