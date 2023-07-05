@@ -6,7 +6,7 @@ class OperationsController < ApplicationController
   end
 
   def new
-    @categories = Category.all
+    @categories = current_user.categories
     @category = Category.find(params[:category_id])
   end
 

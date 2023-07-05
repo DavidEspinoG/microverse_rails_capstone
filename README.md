@@ -7,6 +7,7 @@
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
+    - [Live demo](#live-demo)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -68,6 +69,11 @@ Blog web page created with Ruby on Rails as a Full-Stack framework
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
+
+### Live demo <a id="live-demo"></a>
+
+- [Link to a video presentation of the project](https://www.loom.com/share/07cfe6d2992a448aafbb8c8b6a04b138?sid=dbe26ac7-722b-4bd0-812c-2ec95f6ac11b)
+- [Deploy](https://www.loom.com/share/07cfe6d2992a448aafbb8c8b6a04b138?sid=dbe26ac7-722b-4bd0-812c-2ec95f6ac11b)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
