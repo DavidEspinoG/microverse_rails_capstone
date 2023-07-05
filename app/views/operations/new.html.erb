@@ -18,14 +18,14 @@
       <div class="checkboxes-container">
         <% @categories.each do |category| %> 
           <div>
-            <%= form.check_box :category, {multiple: true, required: true}, category.id, nil %>
+            <%= form.check_box :category, {multiple: true}, category.id, nil %>
             <%= form.label category.name %>
           </div> 
         <% end %>
       </div>
       <% flash.each do |type, msg| %>
         <div class="alert alert-info">
-          <%= msg[0] %>
+          <%= msg %>
         </div>
       <% end %>
     </div>
