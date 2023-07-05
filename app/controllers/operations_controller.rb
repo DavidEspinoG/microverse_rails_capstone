@@ -1,4 +1,5 @@
 class OperationsController < ApplicationController
+  before_action :authenticate_user!
   def index
     @category = Category.find(params[:category_id])
     @operations = @category.operations.where(author: current_user).order('created_at DESC')
@@ -18,7 +19,7 @@ class OperationsController < ApplicationController
           category = Category.find(e)
           @operation.categories << category
         end
-        redirect_to root_path
+        redirect_to category_operations_path(params[:category].first)
       else
         flash.alert = @operation.errors.full_messages
         redirect_back(fallback_location: root_path)

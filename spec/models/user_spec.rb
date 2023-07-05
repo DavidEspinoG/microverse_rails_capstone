@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
-  let(:correct_user) { User.create name: 'David', email: 'david@mail.com', password: 'password' }
+  let(:correct_user) { User.create name: 'Constanza', email: 'cons@mail.com', password: 'password' }
   let(:invalid_user) { User.create email: 'david@mail.com', password: 'password' }
   let(:invalid_user_two) { User.create name: 'david', password: 'password' }
 
