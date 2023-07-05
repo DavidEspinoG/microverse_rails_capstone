@@ -30,14 +30,16 @@ Blog web page created with Ruby on Rails as a Full-Stack framework
 
 ### Tech Stack <a id="tech-stack"></a>
 
-> Ruby on Rails
-> Postgresql
-> CSS
+- Ruby on Rails
+- Postgresql
+- CSS
 
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="#">HTML, CSS, Ruby On Rails</a></li>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>Ruby on Rails</li>
   </ul>
 </details>
 
@@ -80,7 +82,7 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
-> Ruby 3.2.2 installed in your machine
+- Ruby 3.2.2 installed in your machine
 ### Setup
 
 Clone this repository to your desired folder:
@@ -91,18 +93,20 @@ Clone this repository to your desired folder:
 
 Install this project with:
 
-bundle install
+> bundle install
 
 ### Usage
 
-rails s and open http://localhost:3000
+> rails s 
+
+and open http://localhost:3000
 
 
 ### Run tests
 
 To run tests, run the following command:
 
-rspec 
+> rspec 
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
