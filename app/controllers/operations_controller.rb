@@ -12,7 +12,7 @@ class OperationsController < ApplicationController
   def create
     if params[:category]
       @operation = Operation.new name: params[:name], amount: params[:amount],
-                                author: current_user
+                                 author: current_user
       if @operation.save
         params[:category].each do |e|
           category = Category.find(e)
