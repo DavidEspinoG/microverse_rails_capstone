@@ -209,11 +209,28 @@ body {
 
 .transaction-container {
   background-color: white;
-  padding: 7px ;
+  padding: 7px;
   margin-bottom: 10px;
 }
 
 .transaction-data {
   color: var(--gray);
   margin: 0;
+}
+
+.no-text-decoration {
+  text-decoration: none;
+  color: var(--gray);
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-direction-column {
+  flex-direction: column;
+}
+
+.justify-content-center {
+  justify-content: center;
 }
