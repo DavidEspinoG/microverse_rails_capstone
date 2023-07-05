@@ -1,6 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe 'Home page', type: :system do
+  let!(:user) { User.create name: 'David', email: 'david@mail.com', password: 'password' }
   it 'should render the title of the page' do
     visit root_path
     expect(page).to have_content('Budget App')
