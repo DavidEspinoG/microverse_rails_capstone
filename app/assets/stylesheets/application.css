@@ -192,3 +192,8 @@ body {
 .category-container-text {
   color: var(--gray);
 }
+
+.checkboxes-container {
+  padding: 14px 0;
+  display: grid;
+}
