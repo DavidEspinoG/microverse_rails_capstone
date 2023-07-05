@@ -1,30 +1,31 @@
 <div class="header">
-  <i class="fa-solid fa-arrow-left"></i>  
+  <i class="fa-solid fa-bars"></i>  
   <h2 class="header-title">Categories</h1>
   <i class="fa-solid fa-magnifying-glass"></i>
 </div>
 <div class="gray-background">
   <div class="categories-container">
     <% @categories.each do |category| %>
-      <div class="category-container">
-        <div class="category-container-left">
-          <% if category.icon %>
-            <%= image_tag "#{category.icon}.png" %>
-          <% end %>
-        </div>
-        <div class="category-container-right">
-          <div class="category-container-data">
-            <p class="category-container-text"><%= category.name %></p>
-            <p class="category-container-text">total amount<p>
+      <%= link_to category_operations_path(category) do %>
+        <div class="category-container">
+          <div class="category-container-left">
+            <% if category.icon %>
+              <%= image_tag "#{category.icon}.png" %>
+            <% end %>
           </div>
-          <hr class="line">
-          <p class="category-container-text"><%= category.created_at.to_s[0...10] %></p>
+          <div class="category-container-right">
+            <div class="category-container-data">
+              <p class="category-container-text"><%= category.name %></p>
+              <p class="category-container-text">total amount<p>
+            </div>
+            <hr class="line">
+            <p class="category-container-text"><%= category.created_at.to_s[0...10] %></p>
+          </div>
         </div>
-        
-      </div>
+      <% end %>
     <% end %>
   </div>
-  <div class="green-button-container">
-    <%= link_to 'Add new category', new_category_path, class: 'green-button' %>
-  </div>
+</div>
+<div class="green-button-container">
+  <%= link_to 'Add new category', new_category_path, class: 'green-button' %>
 </div>

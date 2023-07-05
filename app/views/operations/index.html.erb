@@ -1,0 +1,19 @@
+<div class="header">
+  <%= link_to categories_path, class: 'nav-link' do %>
+    <i class="fa-solid fa-arrow-left"></i>
+  <% end %>
+  <h2>Operations</h2>
+  <i class="fa-solid fa-magnifying-glass"></i>
+</div>
+<div class="gray-background">
+  <div class="transactions-container">
+  <% @operations.each do |operation|%>
+    <div class="transaction-container">
+      <p><%= operation.name %></p>
+    </div>
+  <% end %>
+  </div>
+</div>
+<div class="green-button-container">
+  <%= link_to 'Add new transaction',  new_category_operation_path, class: 'green-button' %>
+</div>

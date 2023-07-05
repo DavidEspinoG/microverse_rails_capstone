@@ -1,5 +1,11 @@
 require 'rails_helper'
 
 RSpec.describe Operation, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  let!(:user) { User.create name: 'David', email: 'david@mail.com', password: 'password' }
+  let!(:wrong_operation) { Operation.create amount: 12 }
+  context 'Operation without name' do
+    it 'should be incorrect' do
+      expect(wrong_operation).not_to be_valid
+    end
+  end
 end
