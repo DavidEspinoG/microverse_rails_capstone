@@ -96,6 +96,11 @@ body {
   min-height: calc(100vh - 170px );
 }
 
+.gray-background-large {
+  background-color: #e5e5e5;
+  min-height: calc(100vh - 70px );
+}
+
 .form-container {
   background-color: white;
   padding: 10px;
