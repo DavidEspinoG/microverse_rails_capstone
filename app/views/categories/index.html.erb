@@ -6,7 +6,7 @@
 <div class="gray-background">
   <div class="categories-container">
     <% @categories.each do |category| %>
-      <%= link_to category_operations_path(category) do %>
+      <%= link_to category_operations_path(category), class: 'no-text-decoration' do %>
         <div class="category-container">
           <div class="category-container-left">
             <% if category.icon %>
@@ -15,8 +15,16 @@
           </div>
           <div class="category-container-right">
             <div class="category-container-data">
-              <p class="category-container-text"><%= category.name %></p>
-              <p class="category-container-text">total amount<p>
+              <div class="d-flex flex-direction-column justify-content-center">
+                <p class="category-container-text"><%= category.name %></p>
+              </div>
+              <div>
+                <p class="no-text-decoration">
+                Total: 
+                </p>
+                <p class="category-container-text"><%= number_to_currency(calculate_total(category.operations))  %><p>
+              </div>
+
             </div>
             <hr class="line">
             <p class="category-container-text"><%= category.created_at.to_s[0...10] %></p>
