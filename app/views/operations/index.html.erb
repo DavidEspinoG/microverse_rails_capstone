@@ -6,6 +6,9 @@
   <i class="fa-solid fa-magnifying-glass"></i>
 </div>
 <div class="gray-background">
+  <div class="total-container">
+    <p>Total: <%= number_to_currency(calculate_total(@operations)) %></p>
+  </div>
   <div class="transactions-container">
   <% @operations.each do |operation|%>
     <div class="transaction-container">

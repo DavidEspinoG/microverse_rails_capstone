@@ -234,3 +234,12 @@ body {
 .justify-content-center {
   justify-content: center;
 }
+
+.total-container {
+  padding: 15px 10px;
+  color: var(--gray);
+}
+
+.total-container p {
+  margin: 0;
+}
