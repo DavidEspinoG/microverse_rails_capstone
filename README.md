@@ -161,7 +161,7 @@ If you like this project please star this repo.
 
 ## 🙏 Acknowledgments <a id="acknowledgements"></a>
 
-I would like to thank microverse inc. for helping me in my professional carreer. 
+I would like to thank [Gregoire Vella](https://www.behance.net/gregoirevella) for providing the design for this app
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
