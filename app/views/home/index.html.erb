@@ -2,11 +2,11 @@
   <% if current_user %>
     <h2>Hello <%= current_user.name %></h2>
   <% end %>
-  <h1 class="main-title" >Budget App<h1>
-  <div>
+  <h1 class="main-title" >Budget App</h1>
+  <div class="home-links-container">
     <% unless current_user %>
-      <%= link_to 'Sign up' , new_user_registration_path, class: 'home-link'  %>
-      <%= link_to 'Log in' , user_session_path, class: 'home-link'  %>
+      <%= link_to 'Log in' , user_session_path, class: 'login-link'  %>
+      <%= link_to 'Sign up' , new_user_registration_path, class: 'signup-link'  %>
     <% end %>
     <% if current_user %>
       <%= button_to 'Log out', destroy_user_session_path, method: :delete, class: 'home-link' %>
