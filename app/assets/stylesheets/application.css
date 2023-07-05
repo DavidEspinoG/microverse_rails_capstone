@@ -243,3 +243,11 @@ body {
 .total-container p {
   margin: 0;
 }
+
+.no-styles-button {
+  background-color: transparent;
+  border: none; 
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}

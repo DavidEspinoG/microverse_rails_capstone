@@ -1,5 +1,7 @@
 <div class="header">
-  <i class="fa-solid fa-bars"></i>  
+  <%= button_to destroy_user_session_path, class: 'no-styles-button',  method: :delete do %>
+    <i class="fa-solid fa-bars"></i>  
+  <% end %>
   <h2 class="header-title">Categories</h1>
   <i class="fa-solid fa-magnifying-glass"></i>
 </div>
