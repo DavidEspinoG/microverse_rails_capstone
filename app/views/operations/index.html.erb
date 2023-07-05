@@ -9,7 +9,13 @@
   <div class="transactions-container">
   <% @operations.each do |operation|%>
     <div class="transaction-container">
-      <p><%= operation.name %></p>
+      <div class="transaction-data">
+        <p>Item name: <%= operation.name %></p>
+      </div>
+      <hr class="line">
+      <div class="transaction-data">
+        <p>Item price: <%= number_to_currency(operation.amount) %></p>
+      </div>
     </div>
   <% end %>
   </div>
