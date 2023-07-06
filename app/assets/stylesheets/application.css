@@ -1,6 +1,6 @@
 :root {
   --blue: #3778c2;
-  --green: #5bf523;
+  --green: #60b524;
   --gray: #737579;
   --title-font: 'Courgette', cursive;
   --main-font: 'Montserrat', sans-serif;
@@ -159,8 +159,6 @@ body {
 }
 
 .green-button-container {
-  /* position: fixed;
-  bottom: 0; */
   background-color: var(--green);
   width: 100%;
   padding: 20px 0;
@@ -226,6 +224,11 @@ body {
   color: var(--gray);
 }
 
+.category-container-price {
+  color: #39424a;
+  font-weight: 600;
+}
+
 .checkboxes-container {
   padding: 14px 0;
   display: grid;
@@ -278,4 +281,11 @@ body {
   color: white;
   font-size: 20px;
   cursor: pointer;
+}
+
+.total-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  border-bottom: 0.5px solid #c6c4c4;
 }

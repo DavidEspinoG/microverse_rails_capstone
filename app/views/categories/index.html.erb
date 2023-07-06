@@ -21,12 +21,8 @@
                 <p class="category-container-text"><%= category.name %></p>
               </div>
               <div>
-                <p class="no-text-decoration">
-                Total: 
-                </p>
-                <p class="category-container-text"><%= number_to_currency(calculate_total(category.operations))  %><p>
+                <p class="category-container-price"><%= number_to_currency(calculate_total(category.operations))  %><p>
               </div>
-
             </div>
             <hr class="line">
             <p class="category-container-text"><%= category.created_at.to_s[0...10] %></p>
