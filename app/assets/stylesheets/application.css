@@ -1,15 +1,292 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+:root {
+  --blue: #3778c2;
+  --green: #60b524;
+  --gray: #737579;
+  --title-font: 'Courgette', cursive;
+  --main-font: 'Montserrat', sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: var(--main-font);
+}
+
+*,
+*::before,
+**::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 90%;
+}
+
+.home-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: whitesmoke;
+  color: var(--gray);
+  position: relative;
+}
+
+.login-link {
+  background-color: var(--blue);
+  text-decoration: none;
+  color: white;
+  font-weight: 300;
+  text-transform: uppercase;
+  display: block;
+  width: 275px;
+  padding: 17px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.signup-link {
+  text-decoration: none;
+  color: var(--gray);
+  display: block;
+  width: 275px;
+  padding: 17px;
+  text-align: center;
+}
+
+.home-link {
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 20px;
+  font-family: var(--main-font);
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.home-link:hover {
+  color: var(--green);
+}
+
+.home-links-container {
+  position: absolute;
+  bottom: 35px;
+}
+
+.main-title {
+  font-family: var(--title-font);
+  font-size: 33px;
+}
+
+.header {
+  background-color: var(--blue);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  color: white;
+}
+
+.header-title {
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1.1px;
+}
+
+.nav-link {
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 17px;
+  font-weight: 200;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  color: var(--green);
+}
+
+.radio-buttons-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.gray-background {
+  background-color: #e5e5e5;
+  min-height: calc(100vh - 155px);
+}
+
+.gray-background-large {
+  background-color: #e5e5e5;
+  min-height: calc(100vh - 70px);
+}
+
+.form-container {
+  background-color: white;
+  padding: 10px;
+}
+
+.input {
+  border: none;
+  width: 100%;
+  height: 20px;
+  padding: 10px 0;
+}
+
+.line {
+  border: 0.7px solid #f4f4f4;
+  margin: 0;
+}
+
+.gray-link {
+  text-decoration: none;
+  color: var(--gray);
+}
+
+.gray-links-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.green-button-container {
+  background-color: var(--green);
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.green-button {
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  padding: 10px 40px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.green-button:hover {
+  color: var(--gray);
+  border: 1px solid var(--gray);
+}
+
+.alert {
+  margin-top: 10px;
+  padding-left: 10px;
+  color: var(--gray);
+}
+
+.category-container {
+  background-color: white;
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.categories-container {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.category-container-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.category-container-right {
+  flex: 3;
+}
+
+.category-container-data {
+  display: flex;
+  justify-content: space-between;
+}
+
+.category-container-text {
+  color: var(--gray);
+}
+
+.category-container-price {
+  color: #39424a;
+  font-weight: 600;
+}
+
+.checkboxes-container {
+  padding: 14px 0;
+  display: grid;
+}
+
+.transactions-container {
+  padding: 10px;
+}
+
+.transaction-container {
+  background-color: white;
+  padding: 7px;
+  margin-bottom: 10px;
+}
+
+.transaction-data {
+  color: var(--gray);
+  margin: 0;
+}
+
+.no-text-decoration {
+  text-decoration: none;
+  color: var(--gray);
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-direction-column {
+  flex-direction: column;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.total-container {
+  padding: 15px 10px;
+  color: var(--gray);
+}
+
+.total-container p {
+  margin: 0;
+}
+
+.no-styles-button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.total-container-flex {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  border-bottom: 0.5px solid #c6c4c4;
+  padding: 0 10px;
+}

@@ -81,6 +81,4 @@ test:
 #
 production:
   <<: *default
-  database: microverse_rails_capstone_production
-  username: microverse_rails_capstone
-  password: <%= ENV["MICROVERSE_RAILS_CAPSTONE_DATABASE_PASSWORD"] %>
+  url: <%= ENV["DATABASE_URL"] %>

@@ -1,0 +1,34 @@
+<%= form_with url: category_operations_path do |form| %>
+  <div class="header">
+    <%= link_to category_operations_path(@category), class: 'nav-link' do %>
+      <i class="fa-solid fa-arrow-left"></i>
+    <% end %>
+    <h2>New Operation</h2>
+    <%= form.submit class: 'nav-link' %>
+  </div>
+  <div class="gray-background-large">
+    <div class="form-container">
+      <%= form.text_field :name, placeholder: 'Name', class: 'input' %>
+      <hr class="line">
+      <%= form.number_field :amount, placeholder: 'Amount', class: 'input' %>
+      <hr class="line">
+      <div class="input">
+          <span>Select at least 1 category: </span>
+      </div>
+      <div class="checkboxes-container">
+        <% @categories.each do |category| %> 
+          <div>
+            <%= form.check_box :category, {multiple: true}, category.id, nil %>
+            <%= form.label category.name %>
+          </div> 
+        <% end %>
+      </div>
+      <% flash.each do |type, msg| %>
+        <div class="alert alert-info">
+          <%= msg %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+  
+<% end %>
