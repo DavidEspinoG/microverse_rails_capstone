@@ -6,21 +6,32 @@
   <i class="fa-solid fa-magnifying-glass"></i>
 </div>
 <div class="gray-background">
-  <div class="total-container">
-    <p>Total: <%= number_to_currency(calculate_total(@operations)) %></p>
+  <div class="total-container-flex">
+    <p>Total: </p>
+    <p class="category-container-price"><%= number_to_currency(calculate_total(@operations)) %></p>
   </div>
   <div class="transactions-container">
-  <% @operations.each do |operation|%>
-    <div class="transaction-container">
-      <div class="transaction-data">
-        <p>Item name: <%= operation.name %></p>
+    <% @operations.each do |operation|%>
+      <div class="category-container">
+        <div class="category-container-left">
+          <% if operation.categories.first.icon %>
+            <%= image_tag "#{operation.categories.first.icon}.png" %>
+          <% end %>
+        </div>
+        <div class="category-container-right">
+          <div class="category-container-data">
+            <div class="d-flex flex-direction-column justify-content-center">
+              <p class="category-container-text"><%= operation.name %></p>
+            </div>
+            <div>
+              <p class="category-container-price"><%= number_to_currency(operation.amount)  %><p>
+            </div>
+          </div>
+          <hr class="line">
+          <p class="category-container-text"><%= operation.created_at.to_s[0...10] %></p>
+        </div>
       </div>
-      <hr class="line">
-      <div class="transaction-data">
-        <p>Item price: <%= number_to_currency(operation.amount) %></p>
-      </div>
-    </div>
-  <% end %>
+    <% end %>
   </div>
 </div>
 <div class="green-button-container">

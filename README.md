@@ -73,7 +73,7 @@ Blog web page created with Ruby on Rails as a Full-Stack framework
 ### Live demo <a id="live-demo"></a>
 
 - [Link to a video presentation of the project](https://www.loom.com/share/07cfe6d2992a448aafbb8c8b6a04b138?sid=dbe26ac7-722b-4bd0-812c-2ec95f6ac11b)
-- [Deploy](https://www.loom.com/share/07cfe6d2992a448aafbb8c8b6a04b138?sid=dbe26ac7-722b-4bd0-812c-2ec95f6ac11b)
+- [Deploy](https://rails-capstone.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -161,7 +161,7 @@ If you like this project please star this repo.
 
 ## 🙏 Acknowledgments <a id="acknowledgements"></a>
 
-I would like to thank microverse inc. for helping me in my professional carreer. 
+I would like to thank [Gregoire Vella](https://www.behance.net/gregoirevella) for providing the design for this app
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
