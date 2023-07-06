@@ -283,9 +283,10 @@ body {
   cursor: pointer;
 }
 
-.total-container {
+.total-container-flex {
   display: flex;
   justify-content: space-between;
   background-color: white;
   border-bottom: 0.5px solid #c6c4c4;
+  padding: 0 10px;
 }
